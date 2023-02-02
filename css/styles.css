@@ -1,4 +1,104 @@
-body{
-    background-color: #E5E5E5;
-    
+:root{
+    --brand-color:#2E2F42;
+    --main-backgroundcolor: #FFFFFF;
+    --first-half-logo: #4D5AE5;
+    --hover-focus: #404BBF;
+    --button-color: #4D5AE5;
+    --background-button: #F4F4FD;
+    --hover-button-color: #FFFFFF;
+    --hover-background-button: #4D5AE5;
+    --footer-text-color: #E7E9FC;
+
+
 }
+
+
+body{
+    background-color: var(--main-backgroundcolor);
+    font-family: 'Roboto', sans-serif;
+color: var(--brand-color);
+}
+
+
+
+    .logo
+    {
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 24px;
+        font-family: 'raleway';
+        color: var(--brand-color)}
+  
+
+    .web-logo {
+        color: var(--first-half-logo);
+    }
+     .site-nav a{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+     }
+
+    .header-nav a :focus, .header-nav a:hover{
+        color: var(--hover-focus);
+
+    }
+    .site-address a{  
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+  
+    .site-address a:hover, .site-address a:focus
+    {
+        color: var(--hover-focus)
+    }
+
+    .filter-buttons button {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--button-color);
+        background-color: var(--background-button);
+        cursor: pointer;
+    }
+
+    .filter-buttons button:hover, .filter-buttons button:focus{
+        color: var(--hover-button-color);
+        background-color: var(--hover-background-button);
+
+    }
+    .examples-list h2{
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+    }
+    .examples-list p{
+       
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    footer{
+        background-color: #2E2F42;
+
+    }
+    .footer a{
+
+        color: #4D5AE5;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 21px;
+
+    }
+    .footer .footer-text{
+        color: var(--footer-text-color);
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .footer .footer-logo-studio{
+        color: #F4F4FD;
+    }
