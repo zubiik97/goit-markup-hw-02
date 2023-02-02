@@ -1,25 +1,25 @@
 :root{
     --brand-color:#2E2F42;
-    --main-backgroundcolor: #FFFFFF;
-    --first-half-logo: #4D5AE5;
+    --main-white-color: #FFFFFF; 
     --hover-focus: #404BBF;
     --button-color: #4D5AE5;
-    --background-button: #F4F4FD;
-    --hover-button-color: #FFFFFF;
-    --hover-background-button: #4D5AE5;
+    --background-button: #F4F4FD;  
     --footer-text-color: #E7E9FC;
-
-
+    --hover-background-button: #404BBF;
+    --active-page: #000000;
+    --text-color: #434455;
 }
 
 
 body{
-    background-color: var(--main-backgroundcolor);
+    background-color: var(--main-white-color);
     font-family: 'Roboto', sans-serif;
-color: var(--brand-color);
+    color: var(--brand-color);
 }
 
-
+ul{
+    list-style: none;
+}
 
     .logo
     {
@@ -31,13 +31,20 @@ color: var(--brand-color);
   
 
     .web-logo {
-        color: var(--first-half-logo);
+        color: var(--button-color);
     }
+
      .site-nav a{
         font-weight: 500;
         font-size: 16px;
         line-height: 24px;
+        color: var(--brand-color)
      }
+.site-nav .current{
+color: var(--active-page);
+}
+
+
 
     .header-nav a :focus, .header-nav a:hover{
         color: var(--hover-focus);
@@ -47,25 +54,103 @@ color: var(--brand-color);
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
+        color: var(--text-color);
+
     }
+
   
     .site-address a:hover, .site-address a:focus
     {
         color: var(--hover-focus)
     }
 
+
+.hero{
+    background-color: var(--brand-color);
+}
+
+.hero-title{
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 60px;
+    color: var(--main-white-color);
+}
+
+.hero-button {
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+color: var(--main-white-color);
+background-color: var(--button-color);
+}
+
+.hero-button:hover, .hero-button:focus{
+    background-color:var(--hover-background-button);}
+
+.principles-list .title{
+    color: var(--brand-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.principles-list .text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-color);
+
+}
+
+
+.our-work .title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+
+}
+
+.our-team{
+    background-color: var(--background-button);
+}
+
+.main-title .our-team{
+font-weight: 700;
+font-size: 36px;
+line-height: 40px;
+color: var(--brand-color);
+}
+
+.our-team .secondary-title{
+    font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+color: var(--brand-color);
+}
+
+.our-team .text{
+    font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: var(--text-color);
+}
+
+
+
+
+
     .filter-buttons button {
         font-weight: 500;
         font-size: 16px;
         line-height: 24px;
         color: var(--button-color);
-        background-color: var(--background-button);
+        background-color: var(--main-white-color);
         cursor: pointer;
     }
 
     .filter-buttons button:hover, .filter-buttons button:focus{
-        color: var(--hover-button-color);
-        background-color: var(--hover-background-button);
+        color: var(--main-white-color);
+        background-color: var(--button-color);
 
     }
     .examples-list h2{
@@ -80,12 +165,12 @@ line-height: 24px;
     }
 
     footer{
-        background-color: #2E2F42;
+        background-color: var(--brand-color);
 
     }
     .footer a{
 
-        color: #4D5AE5;
+        color: var(--button-color);
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 800;
@@ -100,5 +185,5 @@ line-height: 24px;
     }
 
     .footer .footer-logo-studio{
-        color: #F4F4FD;
+        color: var(--background-button);
     }
