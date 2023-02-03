@@ -25,36 +25,41 @@ ul{
     {
         font-weight: 800;
         font-size: 18px;
-        line-height: 24px;
-        font-family: 'raleway';
-        color: var(--brand-color)}
+        line-height: 1.33;
+        font-family: 'raleway', sans-serif;
+        color: var(--brand-color);
+        letter-spacing: 0.03em;
+    }
+    .web-logo {
+        color: var(--button-color);}
+
   
 
-    .web-logo {
-        color: var(--button-color);
-    }
-
+    
      .site-nav a{
         font-weight: 500;
         font-size: 16px;
-        line-height: 24px;
-        color: var(--brand-color)
+        line-height: 1.5;
+        color: var(--brand-color);
+        letter-spacing: 0.02em;
      }
 .site-nav .current{
-color: var(--active-page);
+color: var(--brand-color);
 }
 
 
 
-    .header-nav a :focus, .header-nav a:hover{
-        color: var(--hover-focus);
-
+    .header-nav .site-address:focus, .header-nav .site-address a:hover{
+        color: var(--hover-focus);}
+        .header-nav .site-nav:focus, .header-nav .site-nav a:hover{
+            color: var(--hover-focus);
     }
     .site-address a{  
         font-weight: 400;
         font-size: 16px;
-        line-height: 24px;
+        line-height: 1.5;
         color: var(--text-color);
+        letter-spacing: 0.02em;
 
     }
 
@@ -70,18 +75,22 @@ color: var(--active-page);
 }
 
 .hero-title{
-    font-weight: 700;
+    
     font-size: 56px;
-    line-height: 60px;
+    line-height: 1.07;
     color: var(--main-white-color);
+    letter-spacing: 0.02em;
 }
 
 .hero-button {
+font-family:'Roboto';
 font-weight: 500;
 font-size: 16px;
-line-height: 24px;
+line-height: 1.5;
+letter-spacing: 0.04em;
 color: var(--main-white-color);
 background-color: var(--button-color);
+cursor: pointer;
 }
 
 .hero-button:hover, .hero-button:focus{
@@ -91,22 +100,25 @@ background-color: var(--button-color);
     color: var(--brand-color);
     font-weight: 500;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
 }
 
 .principles-list .text{
-    font-weight: 400;
+   
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     color: var(--text-color);
+    letter-spacing: 0.02em;
 
 }
 
 
 .our-work .title{
-    font-weight: 700;
+
     font-size: 36px;
-    line-height: 40px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
 
 }
 
@@ -114,25 +126,28 @@ background-color: var(--button-color);
     background-color: var(--background-button);
 }
 
-.main-title .our-team{
-font-weight: 700;
+.our-team .main-title{
+
 font-size: 36px;
-line-height: 40px;
+line-height: 1.11;
 color: var(--brand-color);
+letter-spacing: 0.02em;
 }
 
 .our-team .secondary-title{
     font-weight: 500;
 font-size: 20px;
-line-height: 24px;
+line-height: 1.2;
 color: var(--brand-color);
+letter-spacing: 0.02em;
 }
 
 .our-team .text{
-    font-weight: 400;
+
 font-size: 16px;
-line-height: 24px;
+line-height: 1.5;
 color: var(--text-color);
+letter-spacing: 0.02em;
 }
 
 
@@ -140,12 +155,14 @@ color: var(--text-color);
 
 
     .filter-buttons button {
+        font-family: 'Roboto';
         font-weight: 500;
         font-size: 16px;
-        line-height: 24px;
+        line-height: 1.5;
         color: var(--button-color);
         background-color: var(--main-white-color);
         cursor: pointer;
+        letter-spacing: 0.04em;
     }
 
     .filter-buttons button:hover, .filter-buttons button:focus{
@@ -156,12 +173,14 @@ color: var(--text-color);
     .examples-list h2{
 font-weight: 500;
 font-size: 20px;
-line-height: 24px;
+line-height: 1.5;
+letter-spacing: 0.02em;
     }
     .examples-list p{
        
         font-size: 16px;
-        line-height: 24px;
+        line-height: 1.5;
+        letter-spacing: 0.02em
     }
 
     footer{
@@ -171,19 +190,29 @@ line-height: 24px;
     .footer a{
 
         color: var(--button-color);
-        font-family: 'Raleway';
-        font-style: normal;
+        font-family: 'Raleway', sans-serif;
         font-weight: 800;
         font-size: 18px;
-        line-height: 21px;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
 
     }
     .footer .footer-text{
         color: var(--footer-text-color);
         font-size: 16px;
-        line-height: 24px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
     }
 
     .footer .footer-logo-studio{
         color: var(--background-button);
     }
+
+
+   .page-header a, .footer a {
+        text-decoration: none;
+     }
+
+.header-nav>a, .footer a {
+    text-transform: uppercase;   
+}
